@@ -2,14 +2,15 @@
 
   <main class="main" role="main">
 
-    <div class="text">
+    <?php snippet('welcome') ?>
+
+    <?php snippet('about') ?>
+
+<!--     <div class="text">
       <h1><?php echo $page->title()->html() ?></h1>
       <?php echo $page->text()->kirbytext() ?>
-    </div>
-
-    <hr>
-
-    <?php snippet('projects') ?>
+    </div> -->
+    <!-- HELLO -->
 
   </main>
 

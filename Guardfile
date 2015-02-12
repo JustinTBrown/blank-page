@@ -10,7 +10,7 @@
 
 group :development do
   guard 'livereload' do
-    watch(%r{.+\.(css|html|js)})
+    watch(%r{.+\.(css|html|js|php)})
   end
   guard :compass, compile_on_start:true do
     watch(%r{(.*)\.s[ac]ss$})
