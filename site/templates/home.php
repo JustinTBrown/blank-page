@@ -2,9 +2,11 @@
 
   <main class="main" role="main">
 
-    <?php snippet('welcome') ?>
+    <div class="carousel" dir="rtl">
+      <div><?php snippet('welcome') ?></div>
+      <div><?php snippet('about') ?></div>
+    </div>
 
-    <?php snippet('about') ?>
 
 <!--     <div class="text">
       <h1><?php echo $page->title()->html() ?></h1>
