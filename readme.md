@@ -2,8 +2,10 @@
 Website for Blank Page Studio in beautiful Calgary, AB.
 
 ## Stack
-[Kirby CMS](http://getkirby.com/)
-and more to come...
+- [Kirby CMS](http://getkirby.com/)
+- [Sass](http://sass-lang.com/)
+- [Guard](https://github.com/guard/guard)
+- and more to come...
 
 ## Contributors
 - [Ivan Ostapenko](http://molotok.ca/)
