@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>BLANK PAGE STUDIO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+        <meta name="author" content="Ivan Ostapenko - split slideshow template by Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+	    <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+    </head>
+    <body>
+        
+        <div class="container demo-1">
+
+            <div id="slider" class="sl-slider-wrapper">
+            
+				<div class="sl-slider">	
+                
+                	<div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="0" data-slice2-rotation="0" data-slice1-scale="1" data-slice2-scale="5">
+						<div class="sl-slide-inner">
+							<div class="letterhead"><img src="images/logo.png"></div>
+                            <div class="infoblock">
+                           		<h1>1221 B Kensington Road, N.W.</h1>
+								Calgary, Alberta<br><br>
+                                403.475.1994<br>
+								<a href="images/bpmap.jpg">download our map</a><br>
+								<a href="https://www.google.ca/maps/place/Blank+Page+Studio/@51.052388,-114.090636,17z/data=!4m2!3m1!1s0x53716fe9a958d97b:0x2943c449e2029829">google maps link</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="sl-slide bg-2" data-orientation="horizontal" data-slice1-rotation="0" data-slice2-rotation="0" data-slice1-scale="1" data-slice2-scale="10">
+						<div class="sl-slide-inner">
+							<div class="letterhead"><img src="images/logo.png"></div>
+                         <!--<img class="pano" src="images/pano3s.jpg" width="100%">-->
+                            <div class="text">
+							 	<div class="textblock">
+                             	 <p>BLANK PAGE STUDIO is a space for people dedicated to the advancement of innovative practices and ideas in art, architecture, design, and culture. Our mandate is to engage a broad audience throughout Calgary’s communities in generating dialogue about, and active participation in the city’s cultural sphere.</p> <br>
+                             	 <p>Designed as a hub for local emerging creative professionals, the studio was founded in 2013 by visual artist <b>daniel j kirk</b>, co-created by graduate architects <b>Ivan Ostapenko</b> and <b>Studio North</b>, and also includes <b>Market Collective</b> and <b>Intelligent Futures</b>.</p><br>
+                            
+                           	   	 <p>We welcome collaborations with groups and individuals working to improve communities through thoughtful integration of art and design into the future of the city’s development.</p>
+                                 </div>
+                             </div>
+						</div>
+					</div>
+					
+
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="0" data-slice2-rotation="0" data-slice1-scale="1" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="text">
+                            <h1>We provide event space for various community needs, including: presentations, workshops, fundraising, group meetings, etc.</h1>
+                            <p>Our space is equipped with all the furnishings typically required for social and educational functions, including a kitchenette and projection screen. We also welcome proposals from artists and designers working in any discipline and medium, who wish to temporarily display their work in a semi-public setting. Are you looking for a temporary space at an affordable rate? Contact us now to discuss all the details.<br>
+                            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=d7ni6scsv81qrmr18vmke8ukrk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FEdmonton" style=" border:solid 1px #777 " width="400" height="400" frameborder="0" scrolling="no"></iframe>
+                            </div>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="0" data-slice2-rotation="0" data-slice1-scale="1" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<h2>image roll</h2>
+							<blockquote><p>BLANK PAGE organizes special projects to allow engagement with new environments and audiences, and to support ideas and events beyond the confines of the gallery space. </p><cite>eventbrite link</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<h2>people</h2>
+							<blockquote><p>We provide a hybrid office-studio setting for local entrepreneurs operating small businesses.</p></blockquote>
+						</div>
+					</div>
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+        <span class="nav-arrow-next">Next</span>				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+	</body>
+</html>
