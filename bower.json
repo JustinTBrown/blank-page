@@ -1,0 +1,19 @@
+{
+  "name": "blank-page",
+  "version": "2.0.6",
+  "homepage": "https://github.com/btlcreative/blank-page",
+  "authors": [
+    "JustinBrown <brown.jt@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick.js": "~1.4.1"
+  }
+}
